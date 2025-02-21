@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rate Movies</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>Rate Movies</h1>
+    <form action="/rate" method="post">
+        <label for="user_id">User ID:</label>
+        <input type="number" id="user_id" name="user_id" required><br><br>
+        {% for movie in movies %}
+            <label for="{{ movie.id }}">{{ movie.title }}</label>
+            <input type="number" id="{{ movie.id }}" name="{{ movie.id }}" min="0.5" max="5" step="0.5"><br><br>
+        {% endfor %}
+        <input type="submit" value="Submit Ratings">
+    </form>
+</body>
+</html>

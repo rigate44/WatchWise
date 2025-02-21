@@ -1,0 +1,92 @@
+/* 780000
+c1121f
+fdf0d5
+003049
+669bbc */
+
+body {
+    font-family: Arial Black, sans-serif;
+    background-color: #fdf0d5;
+    margin: 0;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #003049;
+    font-size: 36px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #003049; 
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form {
+    background: #780000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Wider form */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fdf0d5;
+    text-align: center;
+}
+
+.movie-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.movie-column {
+    flex: 1 1 30%; /* Each column takes up to 30% of the row */
+    max-width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center; /* Center-align content in each column */
+}
+
+input[type="number"] {
+    width: 100px; /* Fixed width for number inputs */
+    padding: 8px;
+    border: 1px solid #003049;
+    border-radius: 4px;
+    margin-top: 8px; /* Space between label and input */
+    color: #003049;
+    background-color: #fdf0d5; /* Background color for number inputs */
+    font-size: 18px; /* Larger font size for number inputs */
+    text-align: center; /* Center-align numbers */
+    font-family: Arial Black, sans-serif; /* Set font to Arial Black */
+}
+
+input[type="submit"] {
+    background: #003049; /* Brighter blue color */
+    color: #fdf0d5;
+    border: none;
+    padding: 15px 30px; /* Bigger button */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size */
+}
+
+input[type="submit"]:hover {
+    background: #669bbc; /* Darker blue on hover */
+}
