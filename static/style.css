@@ -14,37 +14,38 @@ body {
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
+    text-align: center;
 }
 
 h1 {
-    color: #003049;
+    color: #780000;
     font-size: 36px; 
     margin-bottom: 20px;
     text-align: center;
 }
 
 h2 {
-    color: #003049; 
+    color: #780000; 
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-form {
+/* form {
     background: #780000;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px; /* Wider form */
+    max-width: 800px;
     text-align: center;
     box-sizing: border-box;
-}
+} */
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #fdf0d5;
+    color: #003049;
     text-align: center;
 }
 
@@ -70,15 +71,15 @@ input[type="number"] {
     border: 1px solid #003049;
     border-radius: 4px;
     margin-top: 8px; /* Space between label and input */
-    color: #003049;
-    background-color: #fdf0d5; /* Background color for number inputs */
+    color: #fdf0d5;
+    background-color: #003049; /* Background color for number inputs */
     font-size: 18px; /* Larger font size for number inputs */
     text-align: center; /* Center-align numbers */
     font-family: Arial Black, sans-serif; /* Set font to Arial Black */
 }
 
 input[type="submit"], button {
-    background: #003049; /* Brighter blue color */
+    background: #669bbc; /* Brighter blue color */
     color: #fdf0d5;
     border: none;
     padding: 15px 30px; /* Bigger button */
@@ -88,5 +89,5 @@ input[type="submit"], button {
 }
 
 input[type="submit"]:hover, button:hover {
-    background: #669bbc; /* Darker blue on hover */
+    background: #780000; /* Darker blue on hover */
 }
