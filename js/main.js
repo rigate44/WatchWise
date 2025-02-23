@@ -25,35 +25,13 @@ function saveRatings(event) {
             });
         }
     });
-    console.log(userRatings); // For debugging purposes
-    alert('Ratings saved successfully!');
-    // Send the ratings to the backend and get recommendations
-    getRecommendations(userId, userRatings);
-}
-
-function getRecommendations(userId, userRatings) {
-    // Placeholder for sending data to a web service or API
-    // fetch('/recommendations', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({ user_id: userId, ratings: userRatings })
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     displayRecommendations(data);
-    // });
-}
-
-function displayRecommendations(recommendations) {
-    let recommendationsDiv = document.getElementById('recommendations');
-    recommendationsDiv.innerHTML = '<h2>Recommended Movies</h2>';
-    recommendations.forEach(movie => {
-        recommendationsDiv.innerHTML += `
-            <p>${movie.title} (${movie.year})</p>
-        `;
-    });
+    console.log("User ID:", userId); // Debugging statement
+    console.log("User Ratings:", userRatings); // Debugging statement
+    // Save the user ratings to localStorage
+    localStorage.setItem('userRatings', JSON.stringify(userRatings));
+    localStorage.setItem('userId', userId);
+    // Redirect to recommendations.html
+    window.location.href = 'recommendations.html';
 }
 
 window.onload = loadRandomMovies;
