@@ -58,9 +58,6 @@ top_10_movies = movies_df[movies_df['id'].isin(ratings_df['movieId'])].head(10)
 new_user_ratings = pd.DataFrame({
     'userId': [672] * 10,
     'movieId': top_10_movies['id'],
-    # 'rating': [5, 4.5, 4, 4.5, 5, 3.5, 4, 4.5, 5, 4]
-    # 'rating': [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
-    # 'rating': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     'rating': [5] * 10
 })
 ratings_df = pd.concat([ratings_df, new_user_ratings], ignore_index=True)
